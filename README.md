@@ -124,5 +124,3 @@ This will compress and analyze a group of structured 1MB test files, output the 
 ## Contact
 
 If you use this, fork it, or build on the ideas here, attribution is appreciated. Feedback or contributions are also welcome.
-
-README was generated using ChatGPT 4o.
