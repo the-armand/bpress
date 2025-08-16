@@ -15,8 +15,19 @@ This project is not meant to compete with production-grade compressors like zstd
 ---
 
 ## File structure
+### Root Directory: `bpress/`
+- **`bpress_v1_0_0.py`** – Main compression engine (class-based)
+- **`main.py`** – Entry point script for compression and analysis
+- **`utilities.py`** – Timing and test decorators
+- **`byte_analysis_nb.ipynb`** – Jupyter notebook for entropy modeling
+- **`test_bpressv1_0_0.py`** – Unit tests for core functions
+- **`Pipfile`**, **`Pipfile.lock`** – Dependency management
 
-<pre lang="markdown"> ## File structure ```text bpress/ ├── bpress_v1_0_0.py # Main compression engine (class-based) ├── main.py # Entry point script for compression + analysis ├── utilities.py # Timing and test decorators ├── byte_analysis_nb.ipynb # Jupyter notebook for entropy modeling ├── test_bpressv1_0_0.py # Unit tests for core functions ├── Pipfile ├── Pipfile.lock # Data generation scripts ├── gen_test_files.py # Random data generator (1MB - 500MB) ├── gen_syn_data.py # Synthetic high-entropy generator with flip-flop control ├── gen_semi_strc_data.py # Simple repeating pattern file (e.g. ABC123XYZ) ├── gen_encrypted_file.py # AES-256 encrypted file generator (1MB) ``` </pre>
+### 📂 Data Generation Scripts
+- **`gen_test_files.py`** – Random data generator (1MB–500MB)
+- **`gen_syn_data.py`** – Synthetic high-entropy generator with flip-flop control
+- **`gen_semi_strc_data.py`** – Repeating ASCII pattern file (e.g., ABC123XYZ)
+- **`gen_encrypted_file.py`** – AES-256 encrypted file generator (1MB)
 
 ---
 
