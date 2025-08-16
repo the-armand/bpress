@@ -23,7 +23,7 @@ This project is not meant to compete with production-grade compressors like zstd
 - **`test_bpressv1_0_0.py`** – Unit tests for core functions
 - **`Pipfile`**, **`Pipfile.lock`** – Dependency management
 
-### 📂 Data Generation Scripts
+### Data Generation Scripts
 - **`gen_test_files.py`** – Random data generator (1MB–500MB)
 - **`gen_syn_data.py`** – Synthetic high-entropy generator with flip-flop control
 - **`gen_semi_strc_data.py`** – Repeating ASCII pattern file (e.g., ABC123XYZ)
